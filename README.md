@@ -4,26 +4,12 @@
 <p align="center"><b>See a feature you like. Understand how it works, down to the binary level.</b></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/npm-v0.1.0-red?style=flat-square" alt="npm" />
-  <img src="https://img.shields.io/badge/MCP-tool%20catalog-blue?style=flat-square" alt="MCP tool catalog" />
-  <img src="https://img.shields.io/badge/Node.js-requirements-green?style=flat-square" alt="Node.js requirements" />
-  <img src="https://img.shields.io/badge/Skills-12.6K-black?style=flat-square" alt="Skills" />
-  <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square" alt="license MIT" />
-  <img src="https://img.shields.io/badge/Discord-4.8k%20online-5865F2?style=flat-square" alt="Discord" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License" />
+  <img src="https://img.shields.io/badge/Rust-Core%20Engine-DEA584?style=flat-square" alt="Rust Core Engine" />
+  <img src="https://img.shields.io/badge/Frontend-React%20%2F%20TypeScript-3178C6?style=flat-square" alt="React TypeScript" />
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square" alt="Python 3.10+" />
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-gray?style=flat-square" alt="Platforms" />
 </p>
-
-<div align="center">
-  <table border="1" cellpadding="8" style="border-collapse: collapse; border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; background-color: #0d1117;">
-    <tr>
-      <td align="center">
-        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #58a6ff;">GITHUB TRENDING</span><br/>
-        <strong style="font-size: 14px; color: #f0f6fc;">#1 Repository Of The Day</strong>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br/>
 
 Author: **Sohail MN (Aka Fingvo) - Full Stack Engineer**  
 Copyright: **(c) 2026 Fingvo. All rights reserved.**  
