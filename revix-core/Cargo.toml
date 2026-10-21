@@ -1,0 +1,37 @@
+# ============================================================================
+# Project: Revix - Open Source Software Reverse Engineering & Binary Inspection Framework
+# Author: Sohail MN (Aka Fingvo) - Full Stack Engineer
+# Copyright: (c) 2026 Fingvo. All rights reserved.
+# License: MIT License
+# ============================================================================
+# Description: Cargo configuration for the Revix Core Native Engine.
+# ============================================================================
+
+[package]
+name = "revix-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sohail MN (Aka Fingvo) <fingvo@users.noreply.github.com>"]
+description = "High-performance binary inspection and reverse engineering engine for Revix"
+license = "MIT"
+
+[dependencies]
+# Web API & Async runtime
+tokio = { version = "1.38", features = ["full"] }
+axum = { version = "0.7", features = ["multipart"] }
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+
+# Serialization & Deserialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Cryptographic Hashing for binary verification
+sha2 = "0.10"
+md-5 = "0.10"
+
+# CLI Argument parsing
+clap = { version = "4.5", features = ["derive"] }
+
+# Hex encoding & memory utilities
+hex = "0.4"
+byteorder = "1.5"

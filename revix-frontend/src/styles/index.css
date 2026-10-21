@@ -1,0 +1,144 @@
+/**
+ * ============================================================================
+ * Project: Revix - Open Source Software Reverse Engineering & Binary Inspection Framework
+ * Author: Sohail MN (Aka Fingvo) - Full Stack Engineer
+ * Copyright: (c) 2026 Fingvo. All rights reserved.
+ * License: MIT License
+ * ============================================================================
+ * Description: Master CSS theme tokens and layout styling for Revix SRE workbench.
+ * ============================================================================
+ */
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Palette */
+  --bg-dark-base: #0a0d13;
+  --bg-dark-card: #111622;
+  --bg-dark-card-hover: #161c2b;
+  --bg-dark-surface: #1a2234;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(79, 172, 254, 0.35);
+
+  --accent-cyan: #00f2fe;
+  --accent-blue: #4facfe;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+  --accent-violet: #8b5cf6;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark-base);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3447;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4863;
+}
+
+/* Monospace Utilities */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Card Panel Utilities */
+.sre-panel {
+  background-color: var(--bg-dark-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sre-panel:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Badge tags */
+.sre-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sre-badge-cyan {
+  background-color: rgba(0, 242, 254, 0.12);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+}
+
+.sre-badge-emerald {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.sre-badge-rose {
+  background-color: rgba(244, 63, 94, 0.12);
+  color: var(--accent-rose);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+}
+
+.sre-badge-amber {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: var(--accent-amber);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+/* Hex Table Row Styling */
+.hex-offset {
+  color: var(--text-muted);
+  user-select: none;
+}
+.hex-byte {
+  color: var(--accent-cyan);
+}
+.hex-byte.null-byte {
+  color: #3b4863;
+}
+.hex-ascii {
+  color: var(--text-secondary);
+}
+.hex-ascii:hover {
+  color: var(--accent-cyan);
+  background-color: rgba(0, 242, 254, 0.1);
+}
+
+/* Assembly mnemonic syntax coloring */
+.asm-addr { color: #64748b; }
+.asm-bytes { color: #475569; }
+.asm-mnemonic { color: #38bdf8; font-weight: 600; }
+.asm-operands { color: #e2e8f0; }
+.asm-comment { color: #10b981; font-style: italic; }

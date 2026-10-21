@@ -1,0 +1,14 @@
+# ============================================================================
+# Project: Revix - Open Source Software Reverse Engineering & Binary Inspection Framework
+# Author: Sohail MN (Aka Fingvo) - Full Stack Engineer
+# Copyright: (c) 2026 Fingvo. All rights reserved.
+# License: MIT License
+# ============================================================================
+# Python dependencies for Revix Automation & Heuristic Engine
+# ============================================================================
+
+requests>=2.31.0
+click>=8.1.7
+rich>=13.7.0
+tabulate>=0.9.0
+pycryptodome>=3.20.0
